@@ -5,6 +5,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://www.chromestatus.com/features/5093566007214080">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" />
+  <script type="text/javascript"
+    src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"></script>
+</head>
+
+
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" />
   <script type="text/javascript" src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"></script>
@@ -354,31 +366,45 @@
                 <div id="frmContact">
                   <div class="registration-mail-status"></div>
                   <form class="form form-dark writealine-form" id="registration">
+    <script type="text/javascript">
+      $(function () {
+        $('[id*=lstCity]').multiselect({
+          includeSelectAllOption: true
+        });
+      });
+    </script>
+    <input class="input" type="text" name="lastname" id="lastname" placeholder="Nom de propriétéaire*" required>
+    <span id="lastname-info" class="info"></span>
 
-                    <input class="input" type="text" name="lastname" id="lastname" placeholder="Nom de propriétéaire*" required>
-                    <span id="lastname-info" class="info"></span>
+    <input class="input" type="text" name="firstname" name="firstname" id="firstname" placeholder="Nom de l'agence*"
+      required>
+    <span id="firstname-info" class="info"></span>
 
-                    <input class="input" type="text" name="firstname" name="firstname" id="firstname" placeholder="Nom de l'agence*" required>
-                    <span id="firstname-info" class="info"></span>
+    <input class="input" type="text" name="nomagence" id="nomagence"
+      placeholder="Votre agence présenter sur quelles ville*" required>
+    <span id="nomagence-info" class="info"></span>
 
-                    <input class="input" type="text" name="nomagence" id="nomagence" placeholder="Votre agence présenter sur quelles ville*" required>
-                    <span id="nomagence-info" class="info"></span>
+    <select name="lstCity" multiple="multiple" id="lstCity" data-placeholder="Select ville">
+      <option value="1">casablanca</option>
+      <option value="2">Marrakech</option>
+      <option value="3">tanger</option>
+      <option value="4">tetouan</option>
+      <option value="5">Safi</option>
+    </select>
+    <input class="input" type="number" name="number" id="number" placeholder="Numéro de téléphone*" required>
+    <span id="number-info" class="info"></span>
 
-                    <input class="input" type="number" name="number" id="number" placeholder="Numéro de téléphone*" required>
-                    <span id="number-info" class="info"></span>
+    <input class="input" type="email" name="email" id="email" placeholder="Email*" required>
+    <span id="email-info" class="info"></span>
 
-                    <input class="input" type="email" name="email" id="email" placeholder="Email*" required>
-                    <span id="email-info" class="info"></span>
-
-                    <span class="inputs-description">*Required fields</span>
-                    <div class="button-send">
-                      <button class="btn" name="submit" id="registration-submit">
-                        <a href="#"><span class="btn-caption" name="reg">Send</span>
-                          <span class="icon ion-android-send"></span>
-                        </a>
-                      </button>
-                    </div>
-                  </form>
+    <span class="inputs-description">*Required fields</span>
+    <div class="button-send">
+      <button class="btn" name="submit" id="registration-submit">
+        <a href="#"><span class="btn-caption" name="reg">Send</span>
+          <span class="icon ion-android-send"></span>
+        </a>
+      </button>
+  </form>
                 </div>
               </div>
               <!-- Write-a-Line Form Container End -->
