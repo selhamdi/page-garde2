@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+<head runat="server">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://www.chromestatus.com/features/5093566007214080">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" />
+  <script type="text/javascript" src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" type="text/css">
-    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"
-        type="text/css" />
-    <script type="text/javascript"
-        src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"
-        rel="stylesheet" type="text/css" />
-    <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
-        type="text/javascript"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+  <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/plugins.css">
   <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
-  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -192,7 +190,7 @@
                   <p>We are preparing something amazing and exciting for you. Special surprise for our subscribers only.
                   </p>
                 </div>
-             
+
                 <div class="btn-holder">
                   <a href="#" class="btn btn-light" id="notify-trigger">
                     <span class="btn-caption">Register</span>
@@ -232,15 +230,15 @@
                       </clipPath>
                       <g transform="matrix(1 0 0 1 1.862645e-09 0)" style="clip-path:url(#home-morphing-clippath);">
                         <!-- Put Your Image Here in xlink:href="../path/to/image.jpg" Property -->
-                        
+
                         <image style="overflow:visible;" width="1500" height="1242" xlink:href="img/backgrounds/main-illustration-1500x1242-1.jpg" transform="matrix(0.7198 0 0 0.7198 -2.581610e-02 -0.3868)"></image>
                         <div class="countdown countdown-full">
-                  <span class="help-text">We’ll be back in</span>
-                  <div id="countdown-large"></div>
-                </div>
+                          <span class="help-text">We’ll be back in</span>
+                          <div id="countdown-large"></div>
+                        </div>
                       </g>
                     </g>
-               
+
                   </svg>
                 </div>
               </div>
@@ -354,66 +352,34 @@
                   <span class="reply-group__text">Thanks for your message. We will get back as soon as possible.</span>
                 </div>
                 <div id="frmContact">
-        <div class="registration-mail-status"></div>
-        <form class="form form-dark writealine-form" id="registration">
+                  <div class="registration-mail-status"></div>
+                  <form class="form form-dark writealine-form" id="registration">
 
-                 <input class="input" type="text" name="lastname" id="lastname" placeholder="Nom de propriétéaire*" required>
-          <span id="lastname-info" class="info"></span>
+                    <input class="input" type="text" name="lastname" id="lastname" placeholder="Nom de propriétéaire*" required>
+                    <span id="lastname-info" class="info"></span>
 
-          <input class="input" type="text" name="firstname" name="firstname" id="firstname" placeholder="Nom de l'agence*" required>
-          <span id="firstname-info" class="info"></span>
+                    <input class="input" type="text" name="firstname" name="firstname" id="firstname" placeholder="Nom de l'agence*" required>
+                    <span id="firstname-info" class="info"></span>
 
-          <input class="input" type="text" name="nomagence" id="nomagence" placeholder="Votre agence présenter sur quelles ville*" required>
-          <span id="nomagence-info" class="info"></span>
-         <div id='main'>
-  <colorized-select-dropdown label="Options" :options="['One', 'Two', 'Three', 'Four']" />
-</div>
+                    <input class="input" type="text" name="nomagence" id="nomagence" placeholder="Votre agence présenter sur quelles ville*" required>
+                    <span id="nomagence-info" class="info"></span>
 
-<script type="text/x-template" id="colorized-select-template">
-  
-  <div class='dropdown' :class="{'is-active': isActive}" v-click-outside="hide">
-    <div class='dropdown-trigger' @click='isActive = !isActive'>
-      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-        {{label}}
-        <span class="icon" style="margin-left: 6px">
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </span>
-      </button>
-    </div>
-    <div class="dropdown-menu" id="dropdown-menu" role="menu">
-      <div class="dropdown-content">
-        <div class='dropdown-option' v-for='(option, index) in options' :key='option' @click="selectOption(option)">
-          <a>
-            <span class='icon option-select'
-              :style="{'background-color': colorFor(option, index)}">
-              <i v-show='selected[option]' class='fa fa-check'></i>
-            </span>
-            {{option}}
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  </script>
-        <!-- <input type="button" id="btnSelected" value="Get Selected" /> -->
+                    <input class="input" type="number" name="number" id="number" placeholder="Numéro de téléphone*" required>
+                    <span id="number-info" class="info"></span>
 
-          <input class="input" type="number" name="number" id="number" placeholder="Numéro de téléphone*" required>
-          <span id="number-info" class="info"></span>
+                    <input class="input" type="email" name="email" id="email" placeholder="Email*" required>
+                    <span id="email-info" class="info"></span>
 
-          <input class="input" type="email" name="email" id="email" placeholder="Email*" required>
-          <span id="email-info" class="info"></span>
-
-          <span class="inputs-description">*Required fields</span>
-          <div class="button-send">
-            <button class="btn" name="submit" id="registration-submit">
-              <a href="#"><span class="btn-caption" name="reg">Send</span>
-                <span class="icon ion-android-send"></span>
-              </a>
-            </button>
-          </div>
-        </form>
-      </div>
+                    <span class="inputs-description">*Required fields</span>
+                    <div class="button-send">
+                      <button class="btn" name="submit" id="registration-submit">
+                        <a href="#"><span class="btn-caption" name="reg">Send</span>
+                          <span class="icon ion-android-send"></span>
+                        </a>
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
               <!-- Write-a-Line Form Container End -->
 
@@ -530,61 +496,7 @@
 
   </div>
 
-  <script>
-    Vue.component('colorized-select-dropdown', {
- template: '#colorized-select-template',
- props: {
-   label: {
-     type: String,
-     required: true
-   },
-   options: {
-     type: Array,
-     required: true
-   },
-   palette: {
-     type: Array,
-     required: false,
-     default: () => [
-       "hsl(171, 100%, 41%)",
-       "hsl(217, 71%, 53%)",
-       "hsl(48, 100%, 67%)",
-       "hsl(348, 100%, 61%)"
-     ]
-   }
- },
- data: function() {
-   return {
-     isActive: false,
-     selected: {}
-   };
- },
- methods: {
-   hide() {
-     if (this.isActive) {
-       this.isActive = false;
-     }
-   },
-   colorFor(option, index) {
-     if (this.selected[option]) {
-       return this.palette[index % this.palette.length];
-     }
-     return "#fff";
-   },
-   selectOption(option) {
-     if (option in this.selected) {
-       Vue.delete(this.selected, option);
-     } else {
-       Vue.set(this.selected, option, true);
-     }
-   }
- }
-});
 
-new Vue({
- el: '#main'
-})
-  </script>
   <!-- Load Scripts Start-->
 
   <script src="js/validation.js"></script>
